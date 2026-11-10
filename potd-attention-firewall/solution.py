@@ -6,8 +6,6 @@ def softmax(s):
     exp_s = np.exp(s - np.max(s))
     return exp_s / np.sum(exp_s)
     
-        
-
 def attention_firewall(
     q: np.ndarray, keys: np.ndarray, values: np.ndarray
 ) -> tuple[np.ndarray, np.ndarray]:
